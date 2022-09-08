@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>平均律と純正律</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="master.css">
+	</head>
+	<body>
+
+		<div id="layout_sliders">
+			根音<input id="slider_root" class="slider" type="range" min="255" max="275" step="any" oninput="change()" ><span id="label_root" class="rb"></span>Hz<br><br>
+			３度<input id="slider_third" class="slider" type="range" min="320" max="340" step="any"  oninput="change()"><span id="label_third" class="rb"></span>Hz<br><br>
+			５度<input id="slider_fifth" class="slider" type="range" min="385" max="405" step="any"  oninput="change()"><span id="label_fifth" class="rb"></span>Hz<br><br>
+		</div>
+
+		　<button onclick="change(261.626, 329.638, 391.995)">平均律</button>
+		<button onclick="change(261.626, 327.033, 392.439)">純正律</button>
+		
+		<div id="layout_start" onclick="start()">
+			Click to start!
+		</div>
+
+		<script src="main.js"></script>
+	</body>
+</html>
